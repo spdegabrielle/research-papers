@@ -19,6 +19,6 @@
               #:author   "Matthew Flatt and PLT"
               #:date     "2010"
               #:location "PLT Inc."
-              #:note     "PLT-TR-2010-1"
-              #:url      "http://racket-lang.org/tr1/"))
+              #:url      "http://racket-lang.org/tr1/"
+              #:note     " PLT-TR-2010-1"))
 

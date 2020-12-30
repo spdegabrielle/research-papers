@@ -13,7 +13,8 @@ built with Racket.
 ## Bibliography
 
 \[REF\] Matthew Flatt and PLT, “Reference: Racket,” PLT Inc., 2010.              
-        [`http://racket-lang.org/tr1/`](http://racket-lang.org/tr1/)PLT-TR-2010-1
+        [`http://racket-lang.org/tr1/`](http://racket-lang.org/tr1/)             
+        PLT-TR-2010-1                                                            
 \[REF\] Matthew Flatt and PLT, “Racket Guide,” PLT Inc., 2010.                   
         [`http://racket-lang.org/tr1/`](http://racket-lang.org/tr1/)PLT-TR-2010-2
 
