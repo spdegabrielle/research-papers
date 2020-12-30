@@ -4,7 +4,7 @@
 (module+ test
   (require rackunit))
 
-
+(provide paper-file? get-ref )
 
 ;; Code here
 (define (path-string->string p-str)
@@ -17,14 +17,15 @@
 (define (make-submod-path script-filename)
   (list 'submod
         (list 'file (path-string->string script-filename))
-        'script-info))
+        ;'script-info
+        ))
 
 ;; script-filename : path-string?
 ;; Returns #f or a string.
 ;; Important: see note for get-property-dicts
-(define (get-script-help-string script-filename)
+(define (get-ref script-filename)
   (dynamic-require (make-submod-path script-filename)
-                   'quickscript-module-help-string
+                   'ref
                    (λ () #f)))
 
 (define (property-dict? v)
@@ -53,7 +54,7 @@
   property-dicts)
 
 (define (paper-file? f)
-  (equal? (path-get-extension f) #".rkt"))
+  (equal? (path-get-extension f) #".scrbl"))
 
 
 
