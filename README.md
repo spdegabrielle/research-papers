@@ -10,6 +10,24 @@ ecosystem of tools including the Racket language, DrRacket IDE, `raco`
 command line tools, Slideshow, Scribble and other tools and languages
 built with Racket.
 
+To add a new publication create a PR to add a new file to the `papers`
+folder with the following text
+
+```racket
+#lang scribble/manual                                                          
+                                                                               
+@(provide ref)                                                                 
+                                                                               
+@(define ref                                                                   
+   (bib-entry #:key      "REF"                                                 
+              #:title    "Dependent Type Systems as Macros"                    
+              #:author   "Chang, Ballantyne, Turner, Bowman"                   
+              #:date     "2020"                                                
+              #:location "POPL"                                                
+              #:url      "https://www2.ccs.neu.edu/racket/pubs/popl20-cbtb.pdf"
+              #:note     "PLT-TR-2010-1"))                                     
+```
+
 ## Bibliography
 
 \[REF\] Caldwell, Garnock-Jones, Felleisen , “Typed Dataspace Actors,” Journal                                                                            
