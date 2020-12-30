@@ -12,11 +12,21 @@ built with Racket.
 
 ## Bibliography
 
-\[REF\] Matthew Flatt and PLT, “Reference: Racket,” PLT Inc., 2010.              
-        [`http://racket-lang.org/tr1/`](http://racket-lang.org/tr1/)             
-        PLT-TR-2010-1                                                            
-\[REF\] Matthew Flatt and PLT, “Racket Guide,” PLT Inc., 2010.                   
-        [`http://racket-lang.org/tr1/`](http://racket-lang.org/tr1/)PLT-TR-2010-2
+\[REF\] Andersen, Ballantyne, Felleisen, “Adding Interactive Visual Syntax to                                                                             
+        Textual Code,” OOPSLA 2020, 2020.                                                                                                                 
+        [`https://www2.ccs.neu.edu/racket/pubs/oopsla20-abf.pdf`](https://www2.ccs.neu.edu/racket/pubs/oopsla20-abf.pdf)                                  
+\[REF\] Andersen, Ballantyne, Felleisen, “Adding Interactive Visual Syntax to                                                                             
+        Textual Code(Video),” OOPSLA 2020, 2020.                                                                                                          
+        [`hhttps://youtu.be/8htgAxJuK5c`](hhttps://youtu.be/8htgAxJuK5c)                                                                                  
+\[REF\] Ballantyne, King, Felleisen , “Macros for Domain-Specific Languages,”                                                                             
+        OOPSLA2020-SPLASH2020, 2020.                                                                                                                      
+        [`http://design.cs.iastate.edu/splash20/oopsla20/oopsla20main-p625-p.pdf`](http://design.cs.iastate.edu/splash20/oopsla20/oopsla20main-p625-p.pdf)
+\[REF\] Matthew Flatt and PLT, “Reference: Racket,” PLT Inc., 2010.                                                                                       
+        [`http://racket-lang.org/tr1/`](http://racket-lang.org/tr1/)                                                                                      
+        PLT-TR-2010-1                                                                                                                                     
+\[REF\] Andersen, Ballantyne, Felleisen, “Adding Interactive Visual Syntax to                                                                             
+        Textual Code,” OOPSLA 2020, 2020.                                                                                                                 
+        [`https://www2.ccs.neu.edu/racket/pubs/oopsla20-abf.pdf`](https://www2.ccs.neu.edu/racket/pubs/oopsla20-abf.pdf)                                  
 
 ## 2. Colophon
 
