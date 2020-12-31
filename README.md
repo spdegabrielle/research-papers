@@ -51,7 +51,6 @@ folder with the following text
         [`http://racket-lang.org/tr1/`](http://racket-lang.org/tr1/)                                                                                      
         PLT-TR-2010-1                                                                                                                                     
 
-## 2. Colophon
+## 2. Acknowlegements
 
-This scribble file is derived from the work of Laurent Orseau for the
-`quickscript-extra` package.
+Thank you to Jens Axel Søgaard and Laurent Orseau.

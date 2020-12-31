@@ -54,6 +54,7 @@ To add a new publication create a PR to add a new file to the @tt{papers} folder
           str ))
   
 
-@section{Colophon}
+@section{Acknowlegements}
 
-This scribble file is derived from the work of Laurent Orseau for the @tt{quickscript-extra} package.
+Thank you to Jens Axel Søgaard and Laurent Orseau.
+@; This scribble file is derived from the work of Laurent Orseau for the quickscript-extra package.

@@ -28,30 +28,30 @@
                    'ref
                    (λ () #f)))
 
-(define (property-dict? v)
-  (and (dict? v)
-       (dict-has-key? v 'label)))
-
-;; Returns a list of dictionaries of the properties of the scripts in script-filename,
-;; augmented with the scripts' function and the script filepath.
-;; IMPORTANT: Loads the file in the current namespace, so a new namespace should probably
-;; be created with (make-base-empty-namespace).
-;; script-filename : path-string?
-(define (get-property-dicts script-filepath)
-  (define the-submod (make-submod-path script-filepath))
-  (dynamic-require the-submod #f)
-  (define-values (vars syntaxes) (module->exports the-submod))
-  (define funs (map car (dict-ref vars 0)))
-  (define property-dicts
-    (filter values
-            (for/list ([fun (in-list funs)])
-              (define maybe-props (dynamic-require the-submod fun))
-              (and (property-dict? maybe-props)
-                   (list*
-                    (cons 'name fun)
-                    (cons 'filepath script-filepath)
-                    maybe-props)))))
-  property-dicts)
+;(define (property-dict? v)
+;  (and (dict? v)
+;       (dict-has-key? v 'label)))
+;
+;;; Returns a list of dictionaries of the properties of the scripts in script-filename,
+;;; augmented with the scripts' function and the script filepath.
+;;; IMPORTANT: Loads the file in the current namespace, so a new namespace should probably
+;;; be created with (make-base-empty-namespace).
+;;; script-filename : path-string?
+;(define (get-property-dicts script-filepath)
+;  (define the-submod (make-submod-path script-filepath))
+;  (dynamic-require the-submod #f)
+;  (define-values (vars syntaxes) (module->exports the-submod))
+;  (define funs (map car (dict-ref vars 0)))
+;  (define property-dicts
+;    (filter values
+;            (for/list ([fun (in-list funs)])
+;              (define maybe-props (dynamic-require the-submod fun))
+;              (and (property-dict? maybe-props)
+;                   (list*
+;                    (cons 'name fun)
+;                    (cons 'filepath script-filepath)
+;                    maybe-props)))))
+;  property-dicts)
 
 (define (paper-file? f)
   (equal? (path-get-extension f) #".scrbl"))
